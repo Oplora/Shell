@@ -1,0 +1,17 @@
+program
+{
+	int i; /* Номер теста */
+	int j;
+	L : read(i);
+	if (i > 1 and i <= 3) {i = i + 4;} else {write("Too little\n"); goto L;}
+	while(i >= 3) {
+		write(i, "\n");
+		
+		for(j = i ; j > 0; j = j - 1) {
+			write ("\t", j*j);
+		}
+		i = i - 1;
+	write("\n");
+	}
+	write(i);
+}
